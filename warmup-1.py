@@ -184,7 +184,7 @@ if __name__ == "__main__":
         ((True, 7), False),
         ((False, 6), False),
         ((True, 21), True),
-        ((False, 21), True),
+        ((False, 21), False),
         ((False, 20), False),
         ((True, 23), True),
         ((False, 23), False),
