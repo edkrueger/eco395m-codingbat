@@ -291,7 +291,7 @@ if __name__ == "__main__":
         (("a",), "aaa"),
         (("",), ""),
     ]
-    
+
     input = [
         (sleep_in, sleep_in_cases),
         (monkey_trouble, monkey_trouble_cases),
@@ -305,6 +305,6 @@ if __name__ == "__main__":
         (missing_char, missing_char_cases),
         (front_back, front_back_cases),
         (front3, front3_cases),
-        ]
+    ]
 
     check_problems(input)
