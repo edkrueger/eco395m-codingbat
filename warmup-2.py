@@ -50,6 +50,28 @@ def last2(str):
     return
 
 
+def array_count9(nums):
+    """
+    Given an array of ints, return the number of 9's in the array.
+
+    array_count9([1, 2, 9]) → 1
+    array_count9([1, 9, 9]) → 2
+    array_count9([1, 9, 9, 3, 9]) → 3
+    """
+    return
+
+
+def array_front9(nums):
+    """
+    Given an array of ints, return True if one of the first 4 elements in the array is a 9. The array length may be less than 4.
+
+    array_front9([1, 2, 9, 3, 4]) → True
+    array_front9([1, 2, 3, 4, 9]) → False
+    array_front9([1, 2, 3, 4, 5]) → False
+    """
+    return
+
+
 if __name__ == "__main__":
     from _check import check_problems
 
@@ -118,12 +140,39 @@ if __name__ == "__main__":
         (("",), 0),
     ]
 
+    array_count9_cases = [
+        (([1, 2, 9],), 1),
+        (([1, 9, 9],), 2),
+        (([1, 9, 9, 3, 9],), 3),
+        (([1, 2, 3],), 0),
+        (([],), 0),
+        (([4, 2, 4, 3, 1],), 0),
+        (([9, 2, 4, 3, 1],), 1),
+    ]
+
+    array_front9_cases = [
+        (([1, 2, 9, 3, 4],), True),
+        (([1, 2, 3, 4, 9],), False),
+        (([1, 2, 3, 4, 5],), False),
+        (([9, 2, 3],), True),
+        (([1, 9, 9],), True),
+        (([1, 2, 3],), False),
+        (([1, 9],), True),
+        (([5, 5],), False),
+        (([2],), False),
+        (([9],), True),
+        (([],), False),
+        (([3, 9, 2, 3, 3],), True),
+    ]
+
     input = [
         (string_times, string_times_cases),
         (front_times, front_times_cases),
         (string_bits, string_bits_cases),
         (string_splosion, string_splosion_cases),
         (last2, last2_cases),
+        (array_count9, array_count9_cases),
+        (array_front9, array_count9_cases),
     ]
 
     check_problems(input)
