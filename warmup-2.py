@@ -72,6 +72,32 @@ def array_front9(nums):
     return
 
 
+def array123(nums):
+    """
+        Given an array of ints, return True if the sequence of numbers 1, 2, 3 appears in the array somewhere.
+
+
+    array123([1, 1, 2, 3, 1]) → True
+    array123([1, 1, 2, 4, 1]) → False
+    array123([1, 1, 2, 1, 2, 3]) → True
+    """
+    return
+
+
+def string_match(str1, str2):
+    """
+
+    Given 2 strings, a and b, return the number of the positions where they contain the same length 2 substring. So "xxcaazz" and "xxbaaz" yields 3, since the "xx", "aa", and "az" substrings appear in the same place in both strings.
+
+
+    string_match('xxcaazz', 'xxbaaz') → 3
+    string_match('abc', 'abc') → 2
+    string_match('abc', 'axc') → 0
+    """
+    print(str1)
+    return
+
+
 if __name__ == "__main__":
     from _check import check_problems
 
@@ -165,6 +191,32 @@ if __name__ == "__main__":
         (([3, 9, 2, 3, 3],), True),
     ]
 
+    array123_cases = [
+        (([1, 1, 2, 3, 1],), True),
+        (([1, 1, 2, 4, 1],), False),
+        (([1, 1, 2, 1, 2, 3],), True),
+        (([1, 1, 2, 1, 2, 1],), False),
+        (([1, 2, 3, 1, 2, 3],), True),
+        (([1, 2, 3],), True),
+        (([1, 1, 1],), False),
+        (([1, 2],), False),
+        (([1],), False),
+        (([],), False),
+    ]
+
+    string_match_cases = [
+        (("xxcaazz", "xxbaaz"), 3),
+        (("abc", "abc"), 2),
+        (("abc", "axc"), 0),
+        (("hello", "he"), 1),
+        (("he", "hello"), 1),
+        (("h", "hello"), 0),
+        (("", "hello"), 0),
+        (("aabbccdd", "abbbxxd"), 1),
+        (("aaxxaaxx", "iaxxai"), 3),
+        (("iaxxai", "aaxxaaxx"), 3),
+    ]
+
     input = [
         (string_times, string_times_cases),
         (front_times, front_times_cases),
@@ -173,6 +225,8 @@ if __name__ == "__main__":
         (last2, last2_cases),
         (array_count9, array_count9_cases),
         (array_front9, array_count9_cases),
+        (array123, array123_cases),
+        (string_match, string_match_cases)
     ]
 
     check_problems(input)
