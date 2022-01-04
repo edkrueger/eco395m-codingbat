@@ -266,7 +266,7 @@ if __name__ == "__main__":
         (without_end, without_end_cases),
         (combo_string, combo_string_cases),
         (non_start, non_start_cases),
-        (left2, left2_cases)
+        (left2, left2_cases),
     ]
 
     check_problems(input)

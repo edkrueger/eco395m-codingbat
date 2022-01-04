@@ -226,7 +226,7 @@ if __name__ == "__main__":
         (array_count9, array_count9_cases),
         (array_front9, array_count9_cases),
         (array123, array123_cases),
-        (string_match, string_match_cases)
+        (string_match, string_match_cases),
     ]
 
     check_problems(input)
