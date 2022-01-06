@@ -94,7 +94,6 @@ def string_match(str1, str2):
     string_match('abc', 'abc') → 2
     string_match('abc', 'axc') → 0
     """
-    print(str1)
     return
 
 
@@ -224,7 +223,7 @@ if __name__ == "__main__":
         (string_splosion, string_splosion_cases),
         (last2, last2_cases),
         (array_count9, array_count9_cases),
-        (array_front9, array_count9_cases),
+        (array_front9, array_front9_cases),
         (array123, array123_cases),
         (string_match, string_match_cases),
     ]
